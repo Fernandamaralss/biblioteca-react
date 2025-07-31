@@ -23,32 +23,6 @@
     display: flex;
 }
 
-/* Estilo de cada item do menu */
-.opcao {
-    min-width: 120px;    /* Largura mínima para manter proporção */
-    font-size: 16px;     /* Tamanho da fonte */
-    display: flex;       /* Permite centralizar o conteúdo */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center;     /* Centraliza verticalmente */
-    text-align: center;      /* Centraliza o texto */
-    height: 100%;        /* Altura total do container pai */
-    padding: 0 5px;      /* Espaçamento interno horizontal */
-    cursor: pointer;     /* Cursor de clique */
-    color: #f8f8f8;      /* Cor do texto (branco claro) */
-}
-
-/* Container para agrupar ícones */
-.icones {
-    display: flex;           /* Layout em linha */
-    align-items: center;     /* Alinha verticalmente ao centro */
-}
-
-/* Estilo individual dos ícones */
-.icone {
-    margin-right: 25px; /* Espaçamento à direita de cada ícone */
-    width: 25px;         /* Largura fixa dos ícones */
-}
-
 /* Remove o marcador padrão da lista (bolinha) */
 li {
     list-style: none;
