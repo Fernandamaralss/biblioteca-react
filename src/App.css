@@ -1,37 +1,55 @@
+/* Definição de variáveis globais para cores primária e secundária */
 :root {
     --cor-primaria: #d3ec5b;
     --cor-secundaria: #cd4a0d;
 }
 
+/* Estilização do container principal da aplicação */
 .App {
-    width: 100vw;
-    height: 100vh;
+    width: 100vw; /* ocupa toda a largura da tela */
+    height: 100vh; /* ocupa toda a altura da tela */
     background-image: linear-gradient(90deg, #c2c3c3 35%, #f8f8f8 100%);
 }
 
+/* Cabeçalho da aplicação */
 .App-header{
-    display: flex;
-    background-color: var(--cor-secundaria);
-
+    display: flex; /* organiza em linha */
+    background-color: var(--cor-secundaria); /* fundo */
+    justify-content: center; /* centraliza o conteúdo horizontalmente */
 }
 
+/* Container para agrupar as opções de menu */
 .opcoes{
     display: flex;
 }
 
-.opcao{
-    min-width: 120px;
-    font-size: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 100%;
-    padding: 0 5px;
-    cursor: pointer;
-    color: #f8f8f8;
+/* Estilo de cada item do menu */
+.opcao {
+    min-width: 120px;    /* Largura mínima para manter proporção */
+    font-size: 16px;     /* Tamanho da fonte */
+    display: flex;       /* Permite centralizar o conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente */
+    text-align: center;      /* Centraliza o texto */
+    height: 100%;        /* Altura total do container pai */
+    padding: 0 5px;      /* Espaçamento interno horizontal */
+    cursor: pointer;     /* Cursor de clique */
+    color: #f8f8f8;      /* Cor do texto (branco claro) */
 }
 
+/* Container para agrupar ícones */
+.icones {
+    display: flex;           /* Layout em linha */
+    align-items: center;     /* Alinha verticalmente ao centro */
+}
+
+/* Estilo individual dos ícones */
+.icone {
+    margin-right: 25px; /* Espaçamento à direita de cada ícone */
+    width: 25px;         /* Largura fixa dos ícones */
+}
+
+/* Remove o marcador padrão da lista (bolinha) */
 li {
     list-style: none;
 }
