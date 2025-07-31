@@ -1,0 +1,12 @@
+/* Container para agrupar ícones */
+.icones {
+    display: flex;           /* Layout em linha */
+    align-items: center;     /* Alinha verticalmente ao centro */
+}
+
+/* Estilo individual dos ícones */
+.icone {
+    margin-right: 25px; /* Espaçamento à direita de cada ícone */
+    width: 25px;         /* Largura fixa dos ícones */
+    cursor: pointer;
+}

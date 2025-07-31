@@ -1,0 +1,6 @@
+/* Cabeçalho da aplicação */
+.App-header{
+    display: flex; /* organiza em linha */
+    background-color: var(--cor-secundaria); /* fundo */
+    justify-content: center; /* centraliza o conteúdo horizontalmente */
+}
