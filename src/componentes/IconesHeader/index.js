@@ -1,22 +1,35 @@
-import perfil from '../../images/perfil.svg'
-import sacola from '../../images/sacola.svg'
-import './estilo.css';
+/* eslint-disable jsx-a11y/alt-text */
+import perfil from "../../images/perfil.svg";
+import sacola from "../../images/sacola.svg";
+import styled from "styled-components";
 
-// Array com os textos e imagens dos icones das opções do menu principal
-const iconesOpcoes = [perfil, sacola]
+const Icone = styled.li`
+  margin-right: 25px; /* Espaçamento à direita de cada ícone */
+  width: 25px;         /* Largura fixa dos ícones */
+  cursor: pointer;
+}
+`;
+const Icones = styled.ul`
+  display: flex; /* Layout em linha */
+  align-items: center; /* Alinha verticalmente ao centro */
+`;
+const iconesOpcoes = [perfil, sacola];
 
 function IconesHeader() {
-    return (
-        <ul className='icones'>
-          { iconesOpcoes.map( (icone) => ( // .map: percorrer um array e transformar seus itens, retornando um novo array com o resultado de cada transformação.
-            // eslint-disable-next-line jsx-a11y/alt-text
-            <li className='icone'><img src={icone}></img></li>
-          )
-        )}
-        </ul>
-        
-    )
+  return (
+    <Icones>
+      {iconesOpcoes.map(
+        (
+          icone // .map: percorrer um array e transformar seus itens, retornando um novo array com o resultado de cada transformação.
+        ) => (
+          // eslint-disable-next-line jsx-a11y/alt-text
+          <Icone className="icone">
+            <img src={icone}></img>
+          </Icone>
+        )
+      )}
+    </Icones>
+  );
 }
 
 export default IconesHeader;
-    
