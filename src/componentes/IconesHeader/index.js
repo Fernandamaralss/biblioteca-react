@@ -9,6 +9,7 @@ function IconesHeader() {
     return (
         <ul className='icones'>
           { iconesOpcoes.map( (icone) => ( // .map: percorrer um array e transformar seus itens, retornando um novo array com o resultado de cada transformação.
+            // eslint-disable-next-line jsx-a11y/alt-text
             <li className='icone'><img src={icone}></img></li>
           )
         )}
