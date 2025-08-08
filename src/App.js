@@ -6,10 +6,6 @@ const AppContainer = styled.div`
   width: 100vw; /* ocupa toda a largura da tela */
   height: 100vh; /* ocupa toda a altura da tela */
   background-image: linear-gradient(90deg, #c2c3c3 35%, #f8f8f8 100%);
-
-  li {
-    list-style: none;
-  }
 `;
 
 function App() {
